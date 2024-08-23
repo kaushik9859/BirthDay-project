@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="icon"><i class="fa-solid fa-cake-candles" style="background-color: #ffebcc;"></i><h3>Birthday Celebration</h3></div>
+        <div id="items"><a href="index.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Home</h5></a>
+            <a href="memory.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center; background-color: #ffebcc;"><h5>Memories</h5></a>
+            <a href="spsgame.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Game</h5></a>
+            <a href="wish.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Wishes&Messages</h5></a>
+            </div>
+        <div id="user"><img src="designer.png"></div>
+    </nav>
+
+    <main>
+        <div class="wall">
+            <h1>Jack's 20th Birthday Celebration</h1>
+            <div class="button">
+                <button id="btn1">Add Memories</button>
+                <a href="#Memories" style="text-decoration: none;padding: 0;"><button id="btn2" style="border-radius: 25px;">Gallery</button></a> 
+            </div>
+        </div>
+
+        <div class="para">
+            <h1>A few lines for my friend</h1>
+            <p style="color: chocolate;">Happy Birthday, Jack! 🎉 Today marks not just another year of your life but a celebration of all the incredible memories and moments that have shaped who you are. As we look back on your 20th birthday celebration, it's clear that this day was one for the books, filled with joy, laughter, and unforgettable experiences.
+
+                From the very start, your birthday was a reflection of the amazing person you are. The epic cake-cutting ceremony was a highlight, with everyone gathering around to cheer as you made your wish and blew out the candles. The sight of your friends and family, all there to celebrate you, was truly heartwarming. The group photo with friends captured the essence of the day—smiles all around and a sense of unity that made the event even more special. It was a moment that showed just how loved and appreciated you are by everyone in your life.
+                
+                The decorations were nothing short of spectacular. The vibrant colors, the carefully arranged themes, and the little touches that personalized the space made it feel like a true celebration. Walking into the venue, you could immediately sense the effort and thought put into making everything perfect. The party venue setup was equally impressive, creating an atmosphere of excitement and anticipation for the day’s festivities. Each detail, from the lighting to the seating arrangements, was designed to make your birthday unforgettable.
+                
+                The memory wall was a particularly touching addition to your celebration. It was more than just a display of photographs; it was a testament to the countless memories we've shared over the years. Each picture told a story, capturing moments of laughter, adventure, and togetherness. Seeing all these memories gathered in one place made me reflect on how much we’ve been through together and how much your presence has enriched our lives. It was a beautiful reminder of the bond we share and the many experiences we’ve had.
+                
+                The gift table was overflowing with thoughtful presents, each one a token of appreciation for you and the positive impact you’ve had on our lives. While the gifts were wonderful, the true gift was your friendship. Your kindness, your humor, and your unwavering support mean more than any material object ever could. It was a day to celebrate not just another year of your life but the person you are—someone who brings light and joy to everyone around them.
+                
+                As I look back on your birthday celebration, I’m filled with gratitude for the opportunity to be a part of such a special day. Your 20th birthday was a testament to the incredible person you are and the many lives you touch with your warmth and generosity. I’m excited for all the adventures and milestones that lie ahead for you. May this new chapter of your life be filled with even more joy, love, and success.
+                
+                Here’s to celebrating many more birthdays together, each one filled with laughter, love, and cherished memories. Happy Birthday, Jack! May your year ahead be as amazing as you are. 🎂🌟</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="gallery">
+            <h3 id="Memories">Photos Gallery</h3>
+            <div>
+                <!-- Existing gallery images -->
+                <figure>
+                    <img src="birth4.jpg" alt="Birthday Cake">
+                    <figcaption>Jack's Cake Cutting Ceremony</figcaption>
+                </figure>
+                <figure>
+                    <img src="birth1.jpg" alt="Friends Group">
+                    <figcaption>Group Photo with Friends</figcaption>
+                </figure>
+                <figure>
+                    <img src="birth2.jpg" alt="Decorations">
+                    <figcaption>Beautiful Decorations</figcaption>
+                </figure>
+                <figure>
+                    <img src="birth3.jpg" alt="Party Venue">
+                    <figcaption>Party Venue Setup</figcaption>
+                </figure>
+                <figure>
+                    <img src="memorywall.jpg" alt="Memory Wall">
+                    <figcaption>Memory Wall Highlights</figcaption>
+                </figure>
+                <figure>
+                    <img src="memorywall1.jpg" alt="Gift Table">
+                    <figcaption>Gift Table Arrangements</figcaption>
+                </figure>
+                <figure>
+                    <img src="memorywall2.jpg" alt="Guest List">
+                    <figcaption>Guest List and Greetings</figcaption>
+                </figure>
+                <!-- New images will be added here by JavaScript -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pop-up form for adding memories -->
+    <div id="popupForm" class="popup" >
+        <div class="popup-content" >
+            <span class="close" style="background-color: #fefefe;">&times;</span>
+            <h2 style="background-color: #fefefe; color: black;">Add Memory</h2>
+            <form id="memoryForm" style="background-color: #fefefe; color: black;">
+                <label for="image" style="background-color: #fefefe; color: black;">Select Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required><br><br>
+                <label for="caption" style="background-color: #fefefe; color: black;">Caption:</label>
+                <input type="text" id="caption" name="caption" required><br><br>
+                <button type="submit" style="background-color: #fefefe; color: black;">Add Memory</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="memory.js"></script>
+</body>
+</html>

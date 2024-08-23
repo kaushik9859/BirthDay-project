@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="icon"><i class="fa-solid fa-cake-candles" style="background-color: #ffebcc;"></i><h3>Birthday Celebration</h3></div>
+        <div id="items">
+            <!-- <a href="index.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Home</h5></a> -->
+            <a href="memory.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center; background-color: #ffebcc;"><h5>Memories</h5></a>
+            <a href="spsgame.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Game</h5></a>
+            <a href="wish.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;background-color: #ffebcc;"><h5>Wishes&Messages</h5></a>
+            </div>
+        <div id="user"><h5>login</h5><img src="designer.png" ></div>
+    </nav>
+    <main>
+        <div id="popupForm" class="popup" >
+            <div class="popup-content" >
+                <span class="close" style="background-color: #ef7373; color: black;">&times;</span>
+                <h2 style="background-color: #ef7373; color: black;">Add User</h2>
+                <form id="memoryForm" style="background-color: #ef7373; color: black;">
+                    <label for="text" style="background-color: #ef7373; color: black;">Select UserName:</label>
+                    <input type="text" id="name" name="image" accept="text" required><br><br>                
+                    <label for="birthday" style="background-color: #ef7373; color: black;">Enter Your Birthday(yyyy/mm/dd):
+                    <input type="text" id="birthday" name="caption" required><br><br></label>
+                    
+                    <button type="submit" style="background-color: #fefefe; color: black;" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="wallpaper">
+           <h1>Jack's 20th Birthday celebration!!!</h1>
+           <a href="memory.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center; background: none;"><button>Create new memory</button></a>
+        </div>
+        <div class="counter">
+            <div id="days">3</div>
+            <div id="hours">07</div>
+            <div id="mins">36</div>
+            <div id="seconds">50</div>
+        </div>
+        <div class="date">
+            <div>Days</div>
+            <div>Hours</div>
+            <div>Minutes</div>
+            <div>seconds</div>
+        </div>
+        <div class="memory">
+            <h3>Latest Memories</h3>
+            <div><img src="birth4.jpg" style="margin-left: 20px;">
+            <img src="birth1.jpg">
+            <img src="birth2.jpg">
+            <img src="birth3.jpg"></div>
+        </div>
+        <div class="game">
+            <h3>Rock Paper Scissors Game</h3>
+            <p>Let's play a game!! if you can get a gift from me.</p>
+            <a href="spsgame.html" style="text-decoration: none;height: 40px ; display: flex;align-items: center;"><button>Play with me</button></a>
+        </div>
+    </main>
+    <footer>
+        <div class="wish">
+            <h3>Wishes & Messages</h3>
+            <div><img src="wish1.jpg"><h5>Happy Birthday Bro!<br><p>Many many Happy returns of the day. May God bless you.</p></h5></div>
+            <div><img src="wish2.jpg"><h5>Happy Birthday Bro!<p>Many many Happy returns of the day. May God bless you.</p></h5></div>
+        </div>
+    </footer>
+    <script src="birthday.js"></script>
+</body>
+</html>

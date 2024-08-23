@@ -1,0 +1,256 @@
+* {
+    background-color: #fff5e6; /* Soft, light background color for a cheerful vibe */
+    color: #ef7373; /* Dark text for good readability */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Increased height for a more prominent navbar */
+    border-bottom: 3px solid #f8b400; /* Bright, festive border color */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ffebcc; /* Light, warm background for navbar */
+}
+.navbar h3,h5{
+    background-color: #ffebcc;
+}
+.navbar #icon {
+    background-color: #ffebcc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    height: 50px;
+    width: 300px;
+}
+.navbar #icon h3{
+    margin-left: 10px;
+}
+.navbar #user img{
+    margin-left: 15px;
+}
+
+
+.navbar #items {
+    background-color: #ffebcc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+    height: 40px;
+    width: 1000px;
+}
+
+.navbar #items h5 {
+    background-color: #ffebcc;
+    padding-left: 40px; /* Reduced padding for better spacing */
+    font-size: 18px; /* Slightly larger font size for better visibility */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+.navbar #items h5:hover {
+    color: #f8b400; /* Highlight color to match theme */
+    font-size: 20px; /* Increased font size on hover */
+}
+
+.navbar #user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    margin-top: 15px;
+    background-color: #ffebcc;
+}
+
+.navbar #user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #f8b400; /* Border color to match theme */
+}
+
+
+.wall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 550px;
+    width: 1200px;
+    border-radius: 25px;
+    background: url("memorywall3.jpg") center center/cover;
+    background-blend-mode: darken;
+    opacity: 0.8;
+}
+
+.wall h1 {
+    color: #f8d269; /* Bright, festive color for the heading */
+    padding: 20px;
+    background: none;
+}
+
+.wall .button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.wall .button #btn1 {
+    position:absolute;
+    left: 550px;
+    color: white;
+    font-size: 17px;
+    height: 50px; /* Slightly larger button for better visibility */
+    width: 180px; /* Adjusted width */
+    border-radius: 25px;
+    border: 3px solid #f8b400; /* Festive border color */
+    background-color: #f8b400; /* Festive background color */
+    transition: all 0.3s ease;
+}
+
+.wall .button #btn2 {
+    position:absolute;
+    left: 750px;
+    color: black;
+    height: 50px;
+    width: 170px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: 1px solid black;
+    /* background-color: #f5f5f5; */
+    margin-left: 50px;
+    transition: all 0.3s ease;
+}
+
+#btn1:hover {
+    color: white;
+    font-size: 18px;
+    height: 55px;
+    width: 190px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #e0a800; /* Slightly darker button color on hover */
+}
+
+#btn2:hover {
+    color: black;
+    height: 55px;
+    width: 190px;
+    font-size: 18px;
+    box-shadow: 3px 3px 5px rgba(152, 152, 237, 0.2);
+    background-color: #e0e0e0; /* Slightly darker background color on hover */
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 150px;
+    height: 450px;
+    width: 1200px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 110px;
+    height: 1200px;
+    width: 1400px;
+}
+
+.gallery h3 {
+    margin-bottom: 20px;
+    color: #f8b400; /* Festive color for gallery heading */
+}
+
+.gallery div {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+figure {
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 250px;
+    background-color: #282828;
+    position: relative;
+}
+.gallery figure:hover{
+    height: 270px;
+    width: 320px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(12, 0, 0, 0.2);
+}
+
+figure img {
+    width: 100%;
+    height: calc(100% - 40px);
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+figcaption {
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Pop-up styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}

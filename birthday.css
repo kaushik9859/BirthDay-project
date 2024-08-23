@@ -1,0 +1,297 @@
+/* General Styles */
+* {
+    background-color: #fff5e6; /* Soft, light background color for a cheerful vibe */
+    color: #ef7373; /* Dark text for good readability */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Increased height for a more prominent navbar */
+    border-bottom: 3px solid #f8b400; /* Bright, festive border color */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ffebcc; /* Light, warm background for navbar */
+}
+.navbar h3,h5{
+    background-color: #ffebcc;
+}
+.navbar #icon {
+    background-color: #ffebcc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    height: 50px;
+    width: 300px;
+}
+.navbar #icon h3{
+    margin-left: 10px;
+}
+.navbar #user img{
+    margin-left: 15px;
+}
+
+
+.navbar #items {
+    background-color: #ffebcc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+    height: 40px;
+    width: 1000px;
+}
+
+.navbar #items h5 {
+    background-color: #ffebcc;
+    padding-left: 40px; /* Reduced padding for better spacing */
+    font-size: 18px; /* Slightly larger font size for better visibility */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+.navbar #items h5:hover {
+    color: #f8b400; /* Highlight color to match theme */
+    font-size: 20px; /* Increased font size on hover */
+}
+
+.navbar #user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    margin-top: 15px;
+    background-color: #ffebcc;
+}
+
+.navbar #user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #f8b400; /* Border color to match theme */
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+.popup-content {
+    background-color: #ef7373;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wallpaper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 250px; /* Adjusted margin */
+    height: 400px;
+    width: 1000px;
+    border-radius: 15px; /* Slightly smaller border radius for a softer look */
+    background: url("wall.jpg") center center/cover no-repeat; /* Background image adjustments */
+    opacity: 0.9; /* Slightly more opaque for better visibility */
+}
+
+.wallpaper h1 {
+    color: #f8d269; /* Bright, festive color for the heading */
+    padding: 20px;
+    background: none;/* Light, semi-transparent background for better contrast */
+    border-radius: 10px; /* Rounded corners for the heading background */
+}
+
+.wallpaper button {
+    padding: 10px;
+    font-size: 16px; /* Slightly larger font size */
+    margin-top: 30px;
+    color: #fff;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px rgba(250, 247, 247, 0.2); /* Softer shadow */
+    border: 4px solid #f8b400; /* Border color to match theme */
+    background: none; 
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.wallpaper button:hover {
+    height: 55px;
+    width: 200px;
+    font-size: 18px;
+    background:none; /* Slightly darker button color on hover */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    height: 80px;
+    width: 100%;
+}
+
+.counter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px; /* Adjusted margin for spacing */
+    background-color: #98771b; /* Bright color for counters */
+    height: 70px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 28px;
+    color: #fff; /* White text for contrast */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    color: #55410b;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: #f8b400; 
+}
+
+.memory {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left:140px; 
+    width: 1200px;
+    font-size: 17px;
+}
+
+.memory img {
+    height: 200px;
+    width: 240px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for images */
+    transition: all 0.7s ease;
+}
+.memory img:hover{
+    height: 210px;
+    width: 250px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(12, 0, 0, 0.2);
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 140px;
+    height: auto;
+    font-size: 17px;
+    width: 1000px;
+}
+
+.game p {
+    margin-left: 350px;
+    font-size: 18px;
+    color: #f8b400; /* Matching color for game description */
+}
+
+.game button {
+    font-size: 22px;
+    margin-left: 400px;
+    height: 50px;
+    width: 270px;
+    background-color: #4caf50; /* Festive green color */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.game button:hover {
+    height: 55px;
+    width: 290px;
+    background-color: #388e3c; /* Darker green on hover */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.wish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 140px;
+    height: auto;
+    background: none;
+    width: 1000px;
+}
+
+.wish img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.wish div {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 15px; /* Spacing between wishes */
+}
+
+.wish h5 {
+    margin-left: 10px;
+    background: none;
+    color: #f8b400; /* Festive color for wishes */
+}
+
+.wish p {
+    font-size: 12px;
+    color: #333; /* Dark text for better readability */
+}
