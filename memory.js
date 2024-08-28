@@ -1,4 +1,3 @@
-// Get elements
 const addMemoryButton = document.getElementById('btn1');
 const popupForm = document.getElementById('popupForm');
 const closePopup = document.querySelector('.close');
