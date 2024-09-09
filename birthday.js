@@ -1,6 +1,4 @@
-
 function startCountdown(targetDate) {
-
     const countdownInterval = setInterval(function () {
         const now = new Date().getTime();
         const timeLeft = targetDate - now;
@@ -32,7 +30,6 @@ function startCountdown(targetDate) {
     }, 1000);
 }
 
-
 const addUserButton = document.getElementById('user');
 const popupForm = document.getElementById('popupForm');
 const closePopup = document.querySelector('.close');
@@ -48,7 +45,7 @@ closePopup.addEventListener('click', () => {
     popupForm.style.display = 'none';
 });
 window.addEventListener('click', (event) => {
-    if (event.target === popupForm.parentElement) {
+    if (event.target === popupForm) { 
         popupForm.style.display = 'none';
     }
 });
@@ -61,6 +58,11 @@ submit.addEventListener('click', (event) => {
     const name = nameInput.value;
     const birthDay = birth.value; 
     const targetDate = new Date(`${birthDay}T00:00:00`).getTime();
+
+    if (isNaN(targetDate)) {  // Check if the date is invalid
+        alert('Invalid Date Format. Please enter a valid date.');
+        return;
+    }
 
     alert(`Welcome ${name}`);
     startCountdown(targetDate);
